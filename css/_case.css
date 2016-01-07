@@ -1,0 +1,89 @@
+
+.case_main{
+  margin:80px 100px;
+}
+
+.case_header_wrapper{
+  padding: 10px;
+  background-color: white;
+  position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.case_header{
+
+  text-align: center;
+  height: 400px;
+  position: relative;
+  background: url("http://www.goodwp.com/large/201210/24993.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+
+.case_header_title{
+  position: absolute;
+  right:0px;
+  bottom:50px;
+  padding: 0px 50px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.case_header_title h1{
+  color:white;
+  font-size: 40px;
+}
+
+.case_content_area{
+  overflow: hidden;
+  margin-top:20px;
+  padding: 50px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.case_content_area_left{
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.case_content_area_right{
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.info_grid{
+
+}
+
+.info_grid p{
+  color:#95a5a6;
+}
+
+.pic_grid{
+}
+
+.pic_grid_img{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius:50%;
+  border:5px solid #ecf0f1;
+  float: left;
+}
+
+.pic_grid_img img{
+  width: 100%;
+}
+
+.other_case{
+  margin: 50px 0px;
+}
+
+.other_case h1{
+  border-bottom: 1px solid #bdc3c7;
+}
