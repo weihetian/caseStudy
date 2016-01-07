@@ -14,11 +14,19 @@
   text-align: center;
   height: 400px;
   position: relative;
-  background: url("http://www.goodwp.com/large/201210/24993.jpg");
+  overflow: hidden;
+}
 
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+.case_header_image{
+  width: 100%;
+}
 
+.case_header_image img{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 .case_header_title{
