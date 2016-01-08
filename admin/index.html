@@ -17,7 +17,7 @@
 
 
 
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -28,9 +28,48 @@
 </head>
 <body  ng-app='casestudy'>
 <div class='main'>
-  <h1>CASE STUDY</h1>
+  <div class='left_area'>
+    <div class='left_name'>
+        CASE STUDY
+    </div>
+    <div class='left_function_area'>
+      <div class='btn btn-default new_btn'><i class="fa fa-plus"></i></div>
+    </div>
+    <div class='left_case_area'>
+      <div class='single_case'>
+        <h4><i class="fa fa-file-o"></i> Name</h4>
+        <p><i class="fa fa-clock-o"></i> time</p>
+        <p><i class="fa fa-user"></i> creator</p>
+      </div>
+    </div>
+  </div>
+  <div class='right_area'>
+    <div class='case_content_area'>
 
-  <div class='btn btn-default' >New Case study</div>
+      <div class='case_content_function_area'>
+        <div class='case_content_function'>
+          <i class="fa fa-floppy-o"> Save</i>
+        </div>
+      <div>
+
+      <div class='case_name case_content_area_item'>
+        <h4><i class="fa fa-file-o"></i> Name:</h4>
+        <input class='noborder_input green_input' type="text" value="Case Name">
+      </div>
+
+      <div class='description case_content_area_item'>
+        <h4><i class="fa fa-pencil-square-o"></i> Description:</h4>
+        <textarea class='noborder_textarea green_input' type="text">case Description</textarea>
+      </div>
+
+      <div class='description case_content_area_item'>
+        <h4><i class="fa fa-pencil-square-o"></i> The Goal:</h4>
+        <textarea class='noborder_textarea green_input' type="text">The Goal</textarea>
+      </div>
+    </div>
+  </div>
+
+
 
 
 </div>
