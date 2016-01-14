@@ -24,6 +24,32 @@
       });
     }
 
+    $scope.save =function(){
+
+      var id = $scope.current.id;
+      var cover = $("#cover_input").val();
+      var client = $("#client_input").val();
+      var campaign = $("#campaign_input").val();
+      var time = $("#date_input").val();
+      var objective = $("#objective_input").val();
+      var challenges = $("#challenges_input").val();
+      var execution = $("#execution_input").val();
+      $.ajax({
+        method: "POST",
+        url: "data_access/save_case.php",
+        data: { id:id, cover:cover, client: client, campaign: campaign,time:time, objective:objective, challenges:challenges, execution:execution}
+      })
+      .done(function( msg ) {
+        if(msg == "succeed"){
+          alert("succeed");
+        }else
+        {
+            alert(msg);
+        }
+
+      });
+    }
+
     $scope.select_case = function(id){
       for(var i=0; i<$scope.cases.length;i++){
         if(id==$scope.cases[i].id){

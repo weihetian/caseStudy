@@ -18,6 +18,7 @@ $case_result = array();
 $result = mysqli_query($conn,$query);
 while($row = mysqli_fetch_array($result)){
   $case_id=$row['id'];
+  $cover = $row['cover'];
   $client_name = $row['client'];
   $campaign_name  = $row['campaign'];
   $time  = $row['date'];
@@ -38,7 +39,7 @@ while($row = mysqli_fetch_array($result)){
   //   $image_array[] = array("id"=>$image_id,"url"=>$image_url,"description"=>$image_description);
   // }
 
-  $case_result[] = array("id"=>$case_id,"client"=>$client_name,"campaign"=>$campaign_name,"date"=>$time,"objective"=>$objective,"hallenges"=>$challenges,"execution"=>$execution);
+  $case_result[] = array("id"=>$case_id,"cover"=>$cover,"client"=>$client_name,"campaign"=>$campaign_name,"date"=>$time,"objective"=>$objective,"challenges"=>$challenges,"execution"=>$execution);
 
 
 
