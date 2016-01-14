@@ -2,7 +2,7 @@
 $servername = "52.23.43.247";
 $username = "stak";
 $password = "stakstudios";
-$database = "casestudy";
+$database = "case_study";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password,$database,"3306");
 
@@ -11,11 +11,11 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// TO DO
-$name = $_POST['name'];
-$description = $_POST['description'];
+$client = $_POST['client'];
+$campaign = $_POST['campaign'];
+$time = addslashes($_POST['time']);
 
-$query = "INSERT INTO casestudy( ) VALUES( )";
+$query = "INSERT INTO case_study.case(`client`,`campaign`,`date`) VALUES ('$client','$campaign','$time')";
 
 if (mysqli_query($conn, $query)) {
     echo "succeed";

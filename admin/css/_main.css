@@ -67,7 +67,8 @@ body{
 .single_case{
   cursor: pointer;
   margin: 0px;
-  padding: 0px 20px;
+	padding: 10px 20px;
+	position: relative;
   border-bottom: 1px solid #bdc3c7;
 
 }
@@ -142,4 +143,15 @@ body{
 
 .case_content_function{
   text-align: right;
+}
+
+
+.empty_content{
+	text-align: center;
+
+}
+
+.empty_content h1{
+	color: #7f8c8d;
+	margin-top: 100px;
 }
