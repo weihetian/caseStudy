@@ -42,6 +42,10 @@
   font-size: 40px;
 }
 
+.case_header_title p{
+  color:white;
+}
+
 .case_content_area{
   overflow: hidden;
   margin-top:20px;

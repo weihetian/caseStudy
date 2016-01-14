@@ -24,7 +24,7 @@ $( function() {
       var items = '';
       for ( var i=0; i < data.length; i++ ) {
 
-        var item = '<div class="block" data-id="'+data[i].id+' data-campaign="'+data[i].campaign+'"><div class="inner_block"><div class="block_img">'+
+        var item = '<div class="block" data-id="'+data[i].id+'" data-campaign="'+data[i].campaign+'"><div class="inner_block"><div class="block_img">'+
           '<img src="'+data[i].cover+'" /></div>'+'<div class="block_content"><h3>'+data[i].campaign+'</h3><p>'+data[i].objective+'</p></div>'+
             '<div class="block_footer">'+data[i].date+'</div></div></div>';
         //

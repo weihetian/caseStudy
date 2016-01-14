@@ -56,7 +56,9 @@
 
 <script>
 $(document).on('click', '.block', function(){
-  window.location.href = 'case.html?case_id=1&case_title=case_name';
+  var id = $(this).attr('data-id');
+  var campaign = $(this).attr('data-campaign');
+  window.location.href = 'case.html?case_id='+id+'&case_title='+campaign;
   // var url = $(this).attr('data-url');
   // $('.middle_layer').show();
   // $('.pic_enlarged_container').html("<img src='"+url+"'</img>");
