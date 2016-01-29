@@ -127,9 +127,12 @@ body{
 }*/
 
 .case_study_area{
-
-	background-color: #ecf0f1;
-	overflow: visible;
+	/*background-image: -webkit-repeating-radial-gradient(center center, rgba(97,153,174,0.2), rgba(97,153,174,0.2) 1px, transparent 1px, transparent 100%);
+background-size:4px 4px;
+	background-color: #ecf0f1;*/
+	background: #fff url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid@1x.jpg) repeat left top;
+  background-size: 20px;
+	overflow: hidden;
 
 	position: relative;
 	min-height: 500px;
@@ -137,7 +140,7 @@ z-index: 5;
 }
 
 .case_area_wrapper{
-		margin: 0px 100px;
+		margin: 50px 100px;
 	z-index: 5;
 }
 
@@ -147,10 +150,15 @@ z-index: 5;
 	}
 }
 
+/*.case_area_up{
+	top:-60px;
+		z-index: 5;
+}*/
+
 .case_area{
 
 	position: relative;
-	top:-60px;
+
 	z-index: 5;
 }
 
@@ -187,8 +195,9 @@ z-index: 5;
 .inner_block{
 	cursor: pointer;
 	position: relative;
-	margin: 15px 10px;
-	height:400px;
+	margin: 15px 20px;
+	height: 300px;
+	width: 100%;
 	background-color: white;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
@@ -236,11 +245,19 @@ z-index: 5;
 }
 
 .block_content{
-	height:50px;
+	position: absolute;
+	bottom:0px;
+	color: white;
+	height:80px;
 	padding:10px;
-	color:#7f8c8d;
+	width: 100%;
 	font-size: 18px;
-	border-bottom: 1px solid #ecf0f1;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax */
+	/*border-bottom: 1px solid #ecf0f1;*/
 }
 
 .block_content h3{
@@ -254,7 +271,8 @@ z-index: 5;
 .block_footer{
 	padding:2px 10px;
 		color:#bdc3c7;
-
+		position: absolute;
+		bottom: 0px;
 }
 
 .block_img img{
