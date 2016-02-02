@@ -1,6 +1,15 @@
+header {
+    background-color: rgba(0,0,0,1);
 
+  }
+
+  body{
+    background: #fff url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid@1x.jpg) repeat left top;
+    background-size: 20px;
+  }
 .case_main{
   margin:80px 100px;
+
 }
 
 .case_header_wrapper{
@@ -29,20 +38,33 @@
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
+
+
+
+.case_header_image img {
+    -webkit-animation: zoom 50s; /* Chrome, Safari, Opera */
+    animation: zoom 50s;
+}
+
 .case_header_title{
+  font-weight: lighter;
   position: absolute;
   right:0px;
   bottom:50px;
-  padding: 0px 50px;
+  padding: 20px 50px;
   background-color: rgba(0,0,0,0.6);
 }
 
 .case_header_title h1{
   color:white;
+
+    font-weight: lighter;
+  margin: 5px;
   font-size: 40px;
 }
 
 .case_header_title p{
+  margin: 5px;
   color:white;
 }
 
@@ -71,8 +93,28 @@
 
 }
 
+.info_grid h2{
+  padding-left: 5px;
+  color:#629bb0;
+  font-weight: 100;
+  font-size: 30px;
+  border-left: 3px solid #629bb0;
+}
+
 .info_grid p{
+  font-weight: 300;
+  width: 80%;
+  padding:30px 30px;
   color:#95a5a6;
+  line-height: 25px;
+
+  letter-spacing: 1px;
+}
+
+.info_grid p::first-letter {
+    font-size: 200%;
+    color: #629bb0;
+
 }
 
 .pic_grid{
@@ -97,5 +139,84 @@
 }
 
 .other_case h1{
+  font-weight: lighter;
+  padding-bottom: 2px;
   border-bottom: 1px solid #bdc3c7;
+}
+
+
+@media (max-width: 768px) {
+  .case_main{
+    margin:80px 20px;
+
+  }
+
+  .case_header_wrapper{
+    padding: 5px;
+    background-color: white;
+    position: relative;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .case_header{
+    height: 180px;
+  }
+
+  .case_header_title{
+    font-weight: lighter;
+    position: absolute;
+    right:0px;
+    bottom:20px;
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+
+  .case_content_area_left{
+    width: 100%;
+
+  }
+
+  .case_content_area_right{
+    width: 100%;
+
+  }
+
+
+  .case_header_title h1{
+    color:white;
+    
+      font-weight: lighter;
+    margin: 5px;
+    font-size: 30px;
+  }
+
+  .case_header_title p{
+    margin: 5px;
+    color:white;
+  }
+
+  .case_content_area{
+    margin-top:10px;
+    padding: 20px;
+  }
+
+  .info_grid h2{
+    padding-left: 5px;
+    color:#629bb0;
+    font-weight: 100;
+    font-size: 25px;
+    border-left: 3px solid #629bb0;
+  }
+
+  .info_grid p{
+    font-weight: 300;
+    width: 90%;
+    padding:10px 10px;
+    color:#95a5a6;
+    line-height: 25px;
+
+    letter-spacing: 1px;
+  }
+
 }

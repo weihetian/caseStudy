@@ -39,6 +39,11 @@
 
     <div class='single_case_wrapper' ng-repeat="case in cases">
       <div class='single_case' ng-click='select_case(case.id)'>
+        <div class='single_case_function_area'>
+          <div class='single_case_function_delete single_case_function_item'>
+            <i class="fa fa-trash-o" ng-click='delete_case(case.id)'></i>
+          </div>
+        </div>
         <h4><i class="fa fa-file-o"></i> {{case.campaign}}</h4>
         <p><i class="fa fa-clock-o"></i> {{case.date}}</p>
         <p><i class="fa fa-user"></i> {{case.client}}</p>

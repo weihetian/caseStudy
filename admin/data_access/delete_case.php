@@ -2,7 +2,7 @@
 $servername = "52.23.43.247";
 $username = "stak";
 $password = "stakstudios";
-$database = "casestudy";
+$database = "case_study";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password,$database,"3306");
 
@@ -13,7 +13,7 @@ if (!$conn) {
 
 $id = $_POST['id'];
 
-$query = "DELETE FROM case_study WHERE id = '$id'";
+$query = "DELETE FROM case_study.case WHERE id = '$id'";
 
 if (mysqli_query($conn, $query)) {
     echo "succeed";

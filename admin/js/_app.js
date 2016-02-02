@@ -24,6 +24,25 @@
       });
     }
 
+    $scope.delete_case = function(id){
+
+
+      $.ajax({
+        method: "POST",
+        url: "data_access/delete_case.php",
+        data: { id: id }
+      })
+      .done(function( msg ) {
+        if(msg == "succeed"){
+          updateCases();
+        }else
+        {
+            alert(msg);
+        }
+
+      });
+    }
+
     $scope.save =function(){
 
       var id = $scope.current.id;
